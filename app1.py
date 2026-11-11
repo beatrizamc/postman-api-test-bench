@@ -40,7 +40,7 @@ def editar_tarefa_por_id(id):
             return jsonify(tarefas[indice])
 
 @app.route('/tarefas', methods=['POST'])
-def adicionar_tareda():
+def adicionar_tarefa():
     nova_tarefa = request.get_json()
     tarefas.append(nova_tarefa)
     return jsonify(nova_tarefa)
